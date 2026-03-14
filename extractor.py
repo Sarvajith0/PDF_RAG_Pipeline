@@ -1,14 +1,9 @@
-"""
-Script 1: extractor.py
-Extracts all tables from a PDF and saves them as a structured JSON knowledge base.
-Usage: python extractor.py
-"""
 
 import pdfplumber
 import json
 import re
-PDF_PATH = r"D:\\RAG\sir resources\sample-tables.pdf"
-OUTPUT_PATH = r"D:\\RAG\sir resources\\knowledge_base.json"
+PDF_PATH = r".\sample-tables.pdf"
+OUTPUT_PATH = r".\knowledge_base.json"
 # Map of (page_number, table_index_on_page) → table name
 # Detected by reading page text alongside table positions
 TABLE_NAME_MAP = {
@@ -44,7 +39,6 @@ TABLE_NAME_MAP = {
 }
 
 def clean(value):
-    """Clean a cell value - remove newlines and extra spaces."""
     if value is None:
         return ""
     return re.sub(r'\s+', ' ', str(value)).strip()
@@ -103,7 +97,7 @@ with pdfplumber.open(PDF_PATH) as pdf:
             }
 
             tables_data.append(table_entry)
-            print(f"✅ Extracted: {name} ({len(rows)} rows)")
+            print(f"Extracted: {name} ({len(rows)} rows)")
 
 #To json
 knowledge_base = {
@@ -116,4 +110,4 @@ knowledge_base = {
 with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
     json.dump(knowledge_base, f, indent=2, ensure_ascii=False)
 
-print(f"\n✅ Done! {len(tables_data)} tables saved to knowledge_base.json")
+print(f"\nDone {len(tables_data)} tables saved to knowledge_base.json")
