@@ -1,0 +1,2138 @@
+{
+  "document": "sample-tables.pdf",
+  "description": "Accessible PDF tables sample document — contains 29 tables of various types including financial statements, rainfall data, course listings, and survey results.",
+  "total_tables": 29,
+  "tables": [
+    {
+      "id": "table_1",
+      "name": "Table 1: Basic header structure example",
+      "page": 1,
+      "headers": [
+        "Column header (TH)",
+        "Column header (TH)",
+        "Column header (TH)"
+      ],
+      "rows": [
+        [
+          "Row header (TH)",
+          "Data cell (TD)",
+          "Data cell (TD)"
+        ],
+        [
+          "Row header(TH)",
+          "Data cell (TD)",
+          "Data cell (TD)"
+        ]
+      ],
+      "text_summary": "Table name: Table 1: Basic header structure example || Headers: Column header (TH) | Column header (TH) | Column header (TH) || Row: Row header (TH) | Data cell (TD) | Data cell (TD) || Row: Row header(TH) | Data cell (TD) | Data cell (TD)",
+      "keywords": [
+        "data",
+        "example",
+        "basic",
+        "table",
+        "structure",
+        "column",
+        "row",
+        "cell",
+        "header"
+      ]
+    },
+    {
+      "id": "table_2",
+      "name": "Table 2: Expenditure by function with footnotes (2009-2011)",
+      "page": 1,
+      "headers": [
+        "Expenditure by function £ million",
+        "",
+        "2009/10",
+        "2010/11 1"
+      ],
+      "rows": [
+        [
+          "Policy functions",
+          "Financial",
+          "22.5",
+          "30.57"
+        ],
+        [
+          "",
+          "Information 2",
+          "10.2",
+          "14.8"
+        ],
+        [
+          "",
+          "Contingency",
+          "2.6",
+          "1.2"
+        ],
+        [
+          "Remunerated functions",
+          "Agency services 3",
+          "44.7",
+          "35.91"
+        ],
+        [
+          "",
+          "Payments",
+          "22.41",
+          "19.88"
+        ],
+        [
+          "",
+          "Banking",
+          "22.90",
+          "44.23"
+        ],
+        [
+          "",
+          "Other",
+          "12.69",
+          "10.32"
+        ]
+      ],
+      "text_summary": "Table name: Table 2: Expenditure by function with footnotes (2009-2011) || Headers: Expenditure by function £ million | 2009/10 | 2010/11 1 || Row: Policy functions | Financial | 22.5 | 30.57 || Row:  | Information 2 | 10.2 | 14.8 || Row:  | Contingency | 2.6 | 1.2 || Row: Remunerated functions | Agency services 3 | 44.7 | 35.91 || Row:  | Payments | 22.41 | 19.88 || Row:  | Banking | 22.90 | 44.23 || Row:  | Other | 12.69 | 10.32",
+      "keywords": [
+        "functions",
+        "contingency",
+        "information",
+        "agency",
+        "remunerated",
+        "services",
+        "financial",
+        "million",
+        "with",
+        "table",
+        "payments",
+        "banking",
+        "other",
+        "function",
+        "policy",
+        "footnotes",
+        "expenditure"
+      ]
+    },
+    {
+      "id": "table_3",
+      "name": "Table 3: Film credits style layout without column headers",
+      "page": 1,
+      "headers": [
+        "Main character",
+        "Daniel Radcliffe"
+      ],
+      "rows": [
+        [
+          "Sidekick 1",
+          "Rupert Grint"
+        ],
+        [
+          "Sidekick 2",
+          "Emma Watson"
+        ],
+        [
+          "Lovable ogre",
+          "Robbie Coltrane"
+        ],
+        [
+          "Professor",
+          "Maggie Smith"
+        ],
+        [
+          "Headmaster",
+          "Richard Harris"
+        ]
+      ],
+      "text_summary": "Table name: Table 3: Film credits style layout without column headers || Headers: Main character | Daniel Radcliffe || Row: Sidekick 1 | Rupert Grint || Row: Sidekick 2 | Emma Watson || Row: Lovable ogre | Robbie Coltrane || Row: Professor | Maggie Smith || Row: Headmaster | Richard Harris",
+      "keywords": [
+        "layout",
+        "grint",
+        "ogre",
+        "style",
+        "column",
+        "radcliffe",
+        "smith",
+        "without",
+        "watson",
+        "lovable",
+        "harris",
+        "professor",
+        "daniel",
+        "film",
+        "emma",
+        "coltrane",
+        "credits",
+        "character",
+        "rupert",
+        "main",
+        "robbie",
+        "richard",
+        "sidekick",
+        "headers",
+        "maggie",
+        "table",
+        "headmaster"
+      ]
+    },
+    {
+      "id": "table_4",
+      "name": "Table 4: Film credits with column headers (Role and Actor)",
+      "page": 2,
+      "headers": [
+        "Role",
+        "Actor"
+      ],
+      "rows": [
+        [
+          "Main character",
+          "Daniel Radcliffe"
+        ],
+        [
+          "Sidekick 1",
+          "Rupert Grint"
+        ],
+        [
+          "Sidekick 2",
+          "Emma Watson"
+        ],
+        [
+          "Lovable ogre",
+          "Robbie Coltrane"
+        ],
+        [
+          "Professor",
+          "Maggie Smith"
+        ],
+        [
+          "Headmaster",
+          "Richard Harris"
+        ]
+      ],
+      "text_summary": "Table name: Table 4: Film credits with column headers (Role and Actor) || Headers: Role | Actor || Row: Main character | Daniel Radcliffe || Row: Sidekick 1 | Rupert Grint || Row: Sidekick 2 | Emma Watson || Row: Lovable ogre | Robbie Coltrane || Row: Professor | Maggie Smith || Row: Headmaster | Richard Harris",
+      "keywords": [
+        "grint",
+        "role",
+        "ogre",
+        "column",
+        "radcliffe",
+        "smith",
+        "watson",
+        "lovable",
+        "harris",
+        "actor",
+        "professor",
+        "and",
+        "daniel",
+        "film",
+        "emma",
+        "coltrane",
+        "credits",
+        "character",
+        "rupert",
+        "main",
+        "with",
+        "robbie",
+        "richard",
+        "sidekick",
+        "headers",
+        "maggie",
+        "table",
+        "headmaster"
+      ]
+    },
+    {
+      "id": "table_5",
+      "name": "Table 5: Year-end financial statement in pounds thousands (2008-2010)",
+      "page": 2,
+      "headers": [
+        "",
+        "2010",
+        "2009",
+        "2008"
+      ],
+      "rows": [
+        [
+          "Non-current assets",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Property",
+          "345",
+          "445",
+          "222"
+        ],
+        [
+          "Investment",
+          "567",
+          "654",
+          "423"
+        ],
+        [
+          "Intangibles",
+          "423",
+          "123",
+          "453"
+        ],
+        [
+          "Current assets",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Trade and other receivables",
+          "435",
+          "634",
+          "231"
+        ],
+        [
+          "Cash and cash equivalents",
+          "524",
+          "123",
+          "482"
+        ],
+        [
+          "Other",
+          "223",
+          "211",
+          "254"
+        ]
+      ],
+      "text_summary": "Table name: Table 5: Year-end financial statement in pounds thousands (2008-2010) || Headers: 2010 | 2009 | 2008 || Row: Non-current assets |  |  |  || Row: Property | 345 | 445 | 222 || Row: Investment | 567 | 654 | 423 || Row: Intangibles | 423 | 123 | 453 || Row: Current assets |  |  |  || Row: Trade and other receivables | 435 | 634 | 231 || Row: Cash and cash equivalents | 524 | 123 | 482 || Row: Other | 223 | 211 | 254",
+      "keywords": [
+        "assets",
+        "thousands",
+        "cash",
+        "intangibles",
+        "year",
+        "receivables",
+        "and",
+        "other",
+        "end",
+        "property",
+        "investment",
+        "pounds",
+        "trade",
+        "equivalents",
+        "current",
+        "non",
+        "financial",
+        "table",
+        "statement"
+      ]
+    },
+    {
+      "id": "table_6",
+      "name": "Table 6: Rainfall by continent with multi-level headers (2009-2010)",
+      "page": 2,
+      "headers": [
+        "Rainfall (inches)",
+        "Americas",
+        "Asia",
+        "Europe",
+        "Africa"
+      ],
+      "rows": [
+        [
+          "2010",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Average",
+          "104",
+          "201",
+          "193",
+          "144"
+        ],
+        [
+          "24 hour high",
+          "15",
+          "26",
+          "27",
+          "18"
+        ],
+        [
+          "12 hour high",
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        [
+          "2009",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Average",
+          "133",
+          "244",
+          "155",
+          "166"
+        ],
+        [
+          "24 hour high",
+          "27",
+          "28",
+          "29",
+          "20"
+        ],
+        [
+          "12 hour high",
+          "11",
+          "12",
+          "13",
+          "16"
+        ]
+      ],
+      "text_summary": "Table name: Table 6: Rainfall by continent with multi-level headers (2009-2010) || Headers: Rainfall (inches) | Americas | Asia | Europe | Africa || Row: 2010 |  |  |  |  || Row: Average | 104 | 201 | 193 | 144 || Row: 24 hour high | 15 | 26 | 27 | 18 || Row: 12 hour high | 9 | 10 | 11 | 12 || Row: 2009 |  |  |  |  || Row: Average | 133 | 244 | 155 | 166 || Row: 24 hour high | 27 | 28 | 29 | 20 || Row: 12 hour high | 11 | 12 | 13 | 16",
+      "keywords": [
+        "rainfall",
+        "average",
+        "level",
+        "americas",
+        "continent",
+        "headers",
+        "table",
+        "with",
+        "asia",
+        "high",
+        "multi",
+        "africa",
+        "inches",
+        "europe",
+        "hour"
+      ]
+    },
+    {
+      "id": "table_7",
+      "name": "Table 7: Year-end statement non-current assets in pounds thousands (2008-2010)",
+      "page": 3,
+      "headers": [
+        "Non-current assets",
+        "2010",
+        "2009",
+        "2008"
+      ],
+      "rows": [
+        [
+          "Property",
+          "345",
+          "445",
+          "222"
+        ],
+        [
+          "Investment",
+          "567",
+          "654",
+          "423"
+        ],
+        [
+          "Intangibles",
+          "423",
+          "123",
+          "453"
+        ]
+      ],
+      "text_summary": "Table name: Table 7: Year-end statement non-current assets in pounds thousands (2008-2010) || Headers: Non-current assets | 2010 | 2009 | 2008 || Row: Property | 345 | 445 | 222 || Row: Investment | 567 | 654 | 423 || Row: Intangibles | 423 | 123 | 453",
+      "keywords": [
+        "pounds",
+        "end",
+        "assets",
+        "current",
+        "intangibles",
+        "non",
+        "year",
+        "thousands",
+        "table",
+        "property",
+        "statement",
+        "investment"
+      ]
+    },
+    {
+      "id": "table_8",
+      "name": "Table 8: Year-end statement current assets in pounds thousands (2008-2010)",
+      "page": 3,
+      "headers": [
+        "Current assets",
+        "2010",
+        "2009",
+        "2008"
+      ],
+      "rows": [
+        [
+          "Trade and other receivables",
+          "435",
+          "634",
+          "231"
+        ],
+        [
+          "Cash and cash equivalents",
+          "524",
+          "123",
+          "482"
+        ],
+        [
+          "Other",
+          "223",
+          "211",
+          "254"
+        ]
+      ],
+      "text_summary": "Table name: Table 8: Year-end statement current assets in pounds thousands (2008-2010) || Headers: Current assets | 2010 | 2009 | 2008 || Row: Trade and other receivables | 435 | 634 | 231 || Row: Cash and cash equivalents | 524 | 123 | 482 || Row: Other | 223 | 211 | 254",
+      "keywords": [
+        "pounds",
+        "trade",
+        "end",
+        "assets",
+        "current",
+        "equivalents",
+        "year",
+        "receivables",
+        "thousands",
+        "table",
+        "and",
+        "other",
+        "statement",
+        "cash"
+      ]
+    },
+    {
+      "id": "table_9",
+      "name": "Table 9: Rainfall by continent 2009",
+      "page": 3,
+      "headers": [
+        "Rainfall (inches)",
+        "Americas",
+        "Asia",
+        "Europe",
+        "Africa"
+      ],
+      "rows": [
+        [
+          "Average",
+          "133",
+          "244",
+          "155",
+          "166"
+        ],
+        [
+          "24 hour high",
+          "27",
+          "28",
+          "29",
+          "20"
+        ],
+        [
+          "12 hour high",
+          "11",
+          "12",
+          "13",
+          "16"
+        ]
+      ],
+      "text_summary": "Table name: Table 9: Rainfall by continent 2009 || Headers: Rainfall (inches) | Americas | Asia | Europe | Africa || Row: Average | 133 | 244 | 155 | 166 || Row: 24 hour high | 27 | 28 | 29 | 20 || Row: 12 hour high | 11 | 12 | 13 | 16",
+      "keywords": [
+        "rainfall",
+        "average",
+        "americas",
+        "continent",
+        "table",
+        "asia",
+        "high",
+        "africa",
+        "inches",
+        "europe",
+        "hour"
+      ]
+    },
+    {
+      "id": "table_10",
+      "name": "Table 10: Self-contained year-end statement with layout problems (2011)",
+      "page": 4,
+      "headers": [
+        "",
+        "2011",
+        "",
+        "2010 restated",
+        ""
+      ],
+      "rows": [
+        [
+          "General income",
+          "",
+          "250,000",
+          "",
+          "200,000"
+        ],
+        [
+          "Increase in value, WIP",
+          "",
+          "15,000",
+          "",
+          "30,000"
+        ],
+        [
+          "",
+          "",
+          "265,000",
+          "",
+          "230,000"
+        ],
+        [
+          "Administrative costs",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Staff costs",
+          "(200,000)",
+          "",
+          "(150,000)",
+          ""
+        ],
+        [
+          "Early departures",
+          "(10,000)",
+          "",
+          "(20,000)",
+          ""
+        ],
+        [
+          "Other",
+          "(25,000)",
+          "",
+          "(10,000)",
+          ""
+        ],
+        [
+          "Depreciation",
+          "(10,000)",
+          "",
+          "(10,000)",
+          ""
+        ],
+        [
+          "Progr amme costs",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Impairment loss",
+          "(10,000)",
+          "",
+          "(5,000)",
+          ""
+        ],
+        [
+          "Other",
+          "(5,000)",
+          "",
+          "(5,000)",
+          ""
+        ],
+        [
+          "",
+          "(260,000)",
+          "",
+          "(200,000)",
+          ""
+        ],
+        [
+          "Surplus",
+          "",
+          "5,000",
+          "",
+          "30,000"
+        ]
+      ],
+      "text_summary": "Table name: Table 10: Self-contained year-end statement with layout problems (2011) || Headers: 2011 | 2010 restated || Row: General income |  | 250,000 |  | 200,000 || Row: Increase in value, WIP |  | 15,000 |  | 30,000 || Row:  |  | 265,000 |  | 230,000 || Row: Administrative costs |  |  |  |  || Row: Staff costs | (200,000) |  | (150,000) |  || Row: Early departures | (10,000) |  | (20,000) |  || Row: Other | (25,000) |  | (10,000) |  || Row: Depreciation | (10,000) |  | (10,000) |  || Row: Progr amme costs |  |  |  |  || Row: Impairment loss | (10,000) |  | (5,000) |  || Row: Other | (5,000) |  | (5,000) |  || Row:  | (260,000) |  | (200,000) |  || Row: Surplus |  | 5,000 |  | 30,000",
+      "keywords": [
+        "amme",
+        "restated",
+        "layout",
+        "contained",
+        "self",
+        "loss",
+        "departures",
+        "income",
+        "value",
+        "early",
+        "problems",
+        "progr",
+        "year",
+        "other",
+        "wip",
+        "increase",
+        "end",
+        "impairment",
+        "with",
+        "surplus",
+        "staff",
+        "costs",
+        "general",
+        "table",
+        "administrative",
+        "statement",
+        "depreciation"
+      ]
+    },
+    {
+      "id": "table_11",
+      "name": "Table 11: Self-contained year-end statement resolved layout (2011)",
+      "page": 4,
+      "headers": [
+        "",
+        "",
+        "2011",
+        "2010 restated"
+      ],
+      "rows": [
+        [
+          "Income",
+          "General income",
+          "250,000",
+          "200,000"
+        ],
+        [
+          "",
+          "Increase in value",
+          "15,000",
+          "30,000"
+        ],
+        [
+          "",
+          "Total income",
+          "265,000",
+          "230,000"
+        ],
+        [
+          "Administrative costs",
+          "Staff costs",
+          "(200,000)",
+          "(150,000)"
+        ],
+        [
+          "",
+          "Early departures",
+          "(10,000)",
+          "(20,000)"
+        ],
+        [
+          "",
+          "Other operating costs",
+          "(25,000)",
+          "(10,000)"
+        ],
+        [
+          "",
+          "Depreciation",
+          "(10,000)",
+          "(10,000)"
+        ],
+        [
+          "Programme costs",
+          "Impairment loss",
+          "(10,000)",
+          "(5,000)"
+        ],
+        [
+          "",
+          "Other",
+          "(5,000)",
+          "(5,000)"
+        ],
+        [
+          "",
+          "Total costs",
+          "(260,000)",
+          "(200,000)"
+        ],
+        [
+          "Surplus",
+          "",
+          "5,000",
+          "30,000"
+        ]
+      ],
+      "text_summary": "Table name: Table 11: Self-contained year-end statement resolved layout (2011) || Headers: 2011 | 2010 restated || Row: Income | General income | 250,000 | 200,000 || Row:  | Increase in value | 15,000 | 30,000 || Row:  | Total income | 265,000 | 230,000 || Row: Administrative costs | Staff costs | (200,000) | (150,000) || Row:  | Early departures | (10,000) | (20,000) || Row:  | Other operating costs | (25,000) | (10,000) || Row:  | Depreciation | (10,000) | (10,000) || Row: Programme costs | Impairment loss | (10,000) | (5,000) || Row:  | Other | (5,000) | (5,000) || Row:  | Total costs | (260,000) | (200,000) || Row: Surplus |  | 5,000 | 30,000",
+      "keywords": [
+        "restated",
+        "layout",
+        "contained",
+        "self",
+        "loss",
+        "resolved",
+        "departures",
+        "income",
+        "value",
+        "early",
+        "year",
+        "total",
+        "programme",
+        "other",
+        "increase",
+        "end",
+        "impairment",
+        "surplus",
+        "operating",
+        "staff",
+        "costs",
+        "general",
+        "table",
+        "administrative",
+        "statement",
+        "depreciation"
+      ]
+    },
+    {
+      "id": "table_12",
+      "name": "Table 12: Merged data cells example (2008-2009)",
+      "page": 5,
+      "headers": [
+        "",
+        "2008",
+        "",
+        "2009",
+        ""
+      ],
+      "rows": [
+        [
+          "Name",
+          "Yes",
+          "No",
+          "Yes",
+          "No"
+        ],
+        [
+          "Bob",
+          "2",
+          "5",
+          "6",
+          "7"
+        ],
+        [
+          "Sue",
+          "3",
+          "8",
+          "4",
+          "7"
+        ],
+        [
+          "Sam",
+          "[data relating to both columns in a single cell spanning both]",
+          "",
+          "[data relating to both columns in a single cell spanning both]",
+          ""
+        ]
+      ],
+      "text_summary": "Table name: Table 12: Merged data cells example (2008-2009) || Headers: 2008 | 2009 || Row: Name | Yes | No | Yes | No || Row: Bob | 2 | 5 | 6 | 7 || Row: Sue | 3 | 8 | 4 | 7 || Row: Sam | [data relating to both columns in a single cell spanning both] |  | [data relating to both columns in a single cell spanning both] | ",
+      "keywords": [
+        "sam",
+        "single",
+        "data",
+        "sue",
+        "relating",
+        "name",
+        "cells",
+        "both",
+        "example",
+        "columns",
+        "merged",
+        "table",
+        "spanning",
+        "cell",
+        "yes",
+        "bob"
+      ]
+    },
+    {
+      "id": "table_13",
+      "name": "Table 13: Use of graphic symbols for survey responses",
+      "page": 5,
+      "headers": [
+        "Question",
+        "Respondent A",
+        "Respondent B",
+        "Respondent C"
+      ],
+      "rows": [
+        [
+          "Are you a UK citizen?",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Are you currently employed?",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Do you have a driving licence?",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "text_summary": "Table name: Table 13: Use of graphic symbols for survey responses || Headers: Question | Respondent A | Respondent B | Respondent C || Row: Are you a UK citizen? |  |  |  || Row: Are you currently employed? |  |  |  || Row: Do you have a driving licence? |  |  | ",
+      "keywords": [
+        "for",
+        "you",
+        "citizen",
+        "currently",
+        "driving",
+        "symbols",
+        "have",
+        "licence",
+        "question",
+        "respondent",
+        "employed",
+        "table",
+        "use",
+        "graphic",
+        "are",
+        "survey",
+        "responses"
+      ]
+    },
+    {
+      "id": "table_14",
+      "name": "Table 14: Survey responses with real text instead of symbols",
+      "page": 5,
+      "headers": [
+        "Question",
+        "Respondent A",
+        "Respondent B",
+        "Respondent C"
+      ],
+      "rows": [
+        [
+          "Are you a UK citizen?",
+          "No",
+          "Yes",
+          "No"
+        ],
+        [
+          "Are you currently employed?",
+          "Yes",
+          "No",
+          "Yes"
+        ],
+        [
+          "Do you have a driving licence?",
+          "No",
+          "No",
+          "Yes"
+        ]
+      ],
+      "text_summary": "Table name: Table 14: Survey responses with real text instead of symbols || Headers: Question | Respondent A | Respondent B | Respondent C || Row: Are you a UK citizen? | No | Yes | No || Row: Are you currently employed? | Yes | No | Yes || Row: Do you have a driving licence? | No | No | Yes",
+      "keywords": [
+        "symbols",
+        "have",
+        "yes",
+        "instead",
+        "question",
+        "text",
+        "respondent",
+        "licence",
+        "survey",
+        "with",
+        "you",
+        "are",
+        "responses",
+        "currently",
+        "real",
+        "driving",
+        "employed",
+        "table",
+        "citizen"
+      ]
+    },
+    {
+      "id": "table_15",
+      "name": "Table 15: Courses offered by Institution X by degree type (2006-2009)",
+      "page": 5,
+      "headers": [
+        "",
+        "2006",
+        "2007",
+        "2008",
+        "2009"
+      ],
+      "rows": [
+        [
+          "Economics",
+          "A, B",
+          "A, C",
+          "A, B",
+          "A, C"
+        ],
+        [
+          "International relations",
+          "A, E",
+          "A, E",
+          "A, B",
+          "A, E"
+        ],
+        [
+          "Philosophy",
+          "A",
+          "A",
+          "A",
+          "A, D"
+        ],
+        [
+          "Politics",
+          "A, D",
+          "A, D",
+          "A, D",
+          "A"
+        ],
+        [
+          "Mathematics",
+          "B, C",
+          "B",
+          "A, E",
+          "A, B"
+        ],
+        [
+          "English",
+          "A, C",
+          "A, B",
+          "A,B",
+          "C"
+        ]
+      ],
+      "text_summary": "Table name: Table 15: Courses offered by Institution X by degree type (2006-2009) || Headers: 2006 | 2007 | 2008 | 2009 || Row: Economics | A, B | A, C | A, B | A, C || Row: International relations | A, E | A, E | A, B | A, E || Row: Philosophy | A | A | A | A, D || Row: Politics | A, D | A, D | A, D | A || Row: Mathematics | B, C | B | A, E | A, B || Row: English | A, C | A, B | A,B | C",
+      "keywords": [
+        "english",
+        "international",
+        "relations",
+        "politics",
+        "offered",
+        "courses",
+        "type",
+        "table",
+        "philosophy",
+        "institution",
+        "mathematics",
+        "economics",
+        "degree"
+      ]
+    },
+    {
+      "id": "table_16",
+      "name": "Table 16: Masters courses offered by Institution X (2006-2009)",
+      "page": 6,
+      "headers": [
+        "",
+        "2006",
+        "2007",
+        "2008",
+        "2009"
+      ],
+      "rows": [
+        [
+          "Economics",
+          "No",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "International relations",
+          "No",
+          "No",
+          "No",
+          "No"
+        ],
+        [
+          "Philosophy",
+          "No",
+          "No",
+          "No",
+          "No"
+        ],
+        [
+          "Politics",
+          "No",
+          "No",
+          "No",
+          "No"
+        ],
+        [
+          "Mathematics",
+          "Yes",
+          "No",
+          "No",
+          "No"
+        ],
+        [
+          "English",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ]
+      ],
+      "text_summary": "Table name: Table 16: Masters courses offered by Institution X (2006-2009) || Headers: 2006 | 2007 | 2008 | 2009 || Row: Economics | No | Yes | Yes | Yes || Row: International relations | No | No | No | No || Row: Philosophy | No | No | No | No || Row: Politics | No | No | No | No || Row: Mathematics | Yes | No | No | No || Row: English | Yes | Yes | Yes | Yes",
+      "keywords": [
+        "mathematics",
+        "english",
+        "international",
+        "relations",
+        "politics",
+        "offered",
+        "courses",
+        "masters",
+        "table",
+        "philosophy",
+        "institution",
+        "yes",
+        "economics"
+      ]
+    },
+    {
+      "id": "table_17",
+      "name": "Table 17: Accounts 2011 in pounds thousands with subtotals",
+      "page": 6,
+      "headers": [
+        "Accounting item",
+        "",
+        "2011"
+      ],
+      "rows": [
+        [
+          "Income",
+          "General income",
+          "200,000"
+        ],
+        [
+          "",
+          "Increase in value, WIP",
+          "30,000"
+        ],
+        [
+          "",
+          "Income subtotal",
+          "230,000"
+        ],
+        [
+          "Administrative costs",
+          "Staff",
+          "150,000"
+        ],
+        [
+          "",
+          "Early departures",
+          "20,000"
+        ],
+        [
+          "",
+          "Other operating costs",
+          "10,000"
+        ],
+        [
+          "",
+          "Depreciation",
+          "10,000"
+        ],
+        [
+          "Programme costs",
+          "Impairment loss",
+          "10,000"
+        ],
+        [
+          "",
+          "Costs subtotal",
+          "200,000"
+        ],
+        [
+          "Balance",
+          "",
+          "30,000"
+        ]
+      ],
+      "text_summary": "Table name: Table 17: Accounts 2011 in pounds thousands with subtotals || Headers: Accounting item | 2011 || Row: Income | General income | 200,000 || Row:  | Increase in value, WIP | 30,000 || Row:  | Income subtotal | 230,000 || Row: Administrative costs | Staff | 150,000 || Row:  | Early departures | 20,000 || Row:  | Other operating costs | 10,000 || Row:  | Depreciation | 10,000 || Row: Programme costs | Impairment loss | 10,000 || Row:  | Costs subtotal | 200,000 || Row: Balance |  | 30,000",
+      "keywords": [
+        "loss",
+        "departures",
+        "thousands",
+        "income",
+        "value",
+        "accounting",
+        "early",
+        "programme",
+        "other",
+        "wip",
+        "increase",
+        "subtotals",
+        "item",
+        "impairment",
+        "balance",
+        "with",
+        "operating",
+        "pounds",
+        "staff",
+        "costs",
+        "accounts",
+        "general",
+        "table",
+        "subtotal",
+        "administrative",
+        "depreciation"
+      ]
+    },
+    {
+      "id": "table_18",
+      "name": "Table 18: Accounts 2011 in pounds thousands with negative costs",
+      "page": 6,
+      "headers": [
+        "Accounting item",
+        "",
+        "2011"
+      ],
+      "rows": [
+        [
+          "Income",
+          "General income",
+          "200,000"
+        ],
+        [
+          "",
+          "Increase in value, WIP",
+          "30,000"
+        ],
+        [
+          "",
+          "Income subtotal",
+          "230,000"
+        ],
+        [
+          "Administrative costs",
+          "Staff",
+          "(150,000)"
+        ],
+        [
+          "",
+          "Early departures",
+          "(20,000)"
+        ],
+        [
+          "",
+          "Other operating costs",
+          "(10,000)"
+        ],
+        [
+          "",
+          "Depreciation",
+          "(10,000)"
+        ],
+        [
+          "Programme costs",
+          "Impairment loss",
+          "(10,000)"
+        ],
+        [
+          "",
+          "Costs subtotal",
+          "(200,000)"
+        ],
+        [
+          "Balance",
+          "",
+          "30,000"
+        ]
+      ],
+      "text_summary": "Table name: Table 18: Accounts 2011 in pounds thousands with negative costs || Headers: Accounting item | 2011 || Row: Income | General income | 200,000 || Row:  | Increase in value, WIP | 30,000 || Row:  | Income subtotal | 230,000 || Row: Administrative costs | Staff | (150,000) || Row:  | Early departures | (20,000) || Row:  | Other operating costs | (10,000) || Row:  | Depreciation | (10,000) || Row: Programme costs | Impairment loss | (10,000) || Row:  | Costs subtotal | (200,000) || Row: Balance |  | 30,000",
+      "keywords": [
+        "loss",
+        "departures",
+        "thousands",
+        "income",
+        "value",
+        "accounting",
+        "early",
+        "programme",
+        "other",
+        "wip",
+        "increase",
+        "item",
+        "impairment",
+        "balance",
+        "with",
+        "operating",
+        "negative",
+        "pounds",
+        "staff",
+        "costs",
+        "accounts",
+        "general",
+        "table",
+        "subtotal",
+        "administrative",
+        "depreciation"
+      ]
+    },
+    {
+      "id": "table_19",
+      "name": "Table 19: Human Development Index HDI trends 1980 to 2010",
+      "page": 7,
+      "headers": [
+        "Country",
+        "1980",
+        "1990",
+        "2000",
+        "2010"
+      ],
+      "rows": [
+        [
+          "Afghanistan",
+          "0.78",
+          "1.48",
+          "2.16",
+          "3.33"
+        ],
+        [
+          "Albania",
+          "8.89",
+          "9.67",
+          "9.89",
+          "10.38"
+        ],
+        [
+          "Algeria",
+          "4.74",
+          "3.33",
+          "5.50",
+          "7.24"
+        ],
+        [
+          "Andorra",
+          "4.98",
+          "5.63",
+          "9.09",
+          "10.35"
+        ],
+        [
+          "Angola",
+          "-",
+          "-",
+          "4.42",
+          "4.42"
+        ]
+      ],
+      "text_summary": "Table name: Table 19: Human Development Index HDI trends 1980 to 2010 || Headers: Country | 1980 | 1990 | 2000 | 2010 || Row: Afghanistan | 0.78 | 1.48 | 2.16 | 3.33 || Row: Albania | 8.89 | 9.67 | 9.89 | 10.38 || Row: Algeria | 4.74 | 3.33 | 5.50 | 7.24 || Row: Andorra | 4.98 | 5.63 | 9.09 | 10.35 || Row: Angola | - | - | 4.42 | 4.42",
+      "keywords": [
+        "algeria",
+        "index",
+        "country",
+        "afghanistan",
+        "trends",
+        "development",
+        "angola",
+        "human",
+        "andorra",
+        "table",
+        "hdi",
+        "albania"
+      ]
+    },
+    {
+      "id": "table_20",
+      "name": "Table 20: Expenditure by function with footnotes referenced",
+      "page": 7,
+      "headers": [
+        "Expenditure by function £million",
+        "",
+        "2009/10",
+        "2010/111"
+      ],
+      "rows": [
+        [
+          "Policy functions",
+          "Financial",
+          "22.5",
+          "30.57"
+        ],
+        [
+          "",
+          "Information2",
+          "10.2",
+          "14.8"
+        ],
+        [
+          "",
+          "Contingency",
+          "2.6",
+          "1.2"
+        ],
+        [
+          "Remunerated functions",
+          "Agency services 3",
+          "44.7",
+          "35.91"
+        ],
+        [
+          "",
+          "Payments",
+          "22.41",
+          "19.88"
+        ],
+        [
+          "",
+          "Banking",
+          "22.90",
+          "44.23"
+        ],
+        [
+          "",
+          "Other",
+          "12.69",
+          "10.32"
+        ]
+      ],
+      "text_summary": "Table name: Table 20: Expenditure by function with footnotes referenced || Headers: Expenditure by function £million | 2009/10 | 2010/111 || Row: Policy functions | Financial | 22.5 | 30.57 || Row:  | Information2 | 10.2 | 14.8 || Row:  | Contingency | 2.6 | 1.2 || Row: Remunerated functions | Agency services 3 | 44.7 | 35.91 || Row:  | Payments | 22.41 | 19.88 || Row:  | Banking | 22.90 | 44.23 || Row:  | Other | 12.69 | 10.32",
+      "keywords": [
+        "referenced",
+        "functions",
+        "contingency",
+        "information",
+        "agency",
+        "remunerated",
+        "services",
+        "financial",
+        "million",
+        "with",
+        "table",
+        "payments",
+        "banking",
+        "other",
+        "function",
+        "policy",
+        "footnotes",
+        "expenditure"
+      ]
+    },
+    {
+      "id": "table_21",
+      "name": "Table 21: Expenditure by function footnotes replaced by summary",
+      "page": 8,
+      "headers": [
+        "Expenditure by function £million",
+        "",
+        "2009/10",
+        "2010/11"
+      ],
+      "rows": [
+        [
+          "Policy functions",
+          "Financial",
+          "22.5",
+          "30.57"
+        ],
+        [
+          "",
+          "Information",
+          "10.2",
+          "14.8"
+        ],
+        [
+          "",
+          "Contingency",
+          "2.6",
+          "1.2"
+        ],
+        [
+          "Remunerated functions",
+          "Agency services",
+          "44.7",
+          "35.91"
+        ],
+        [
+          "",
+          "Payments",
+          "22.41",
+          "19.88"
+        ],
+        [
+          "",
+          "Banking",
+          "22.90",
+          "44.23"
+        ],
+        [
+          "",
+          "Other",
+          "12.69",
+          "10.32"
+        ]
+      ],
+      "text_summary": "Table name: Table 21: Expenditure by function footnotes replaced by summary || Headers: Expenditure by function £million | 2009/10 | 2010/11 || Row: Policy functions | Financial | 22.5 | 30.57 || Row:  | Information | 10.2 | 14.8 || Row:  | Contingency | 2.6 | 1.2 || Row: Remunerated functions | Agency services | 44.7 | 35.91 || Row:  | Payments | 22.41 | 19.88 || Row:  | Banking | 22.90 | 44.23 || Row:  | Other | 12.69 | 10.32",
+      "keywords": [
+        "functions",
+        "contingency",
+        "information",
+        "agency",
+        "remunerated",
+        "policy",
+        "financial",
+        "million",
+        "table",
+        "services",
+        "payments",
+        "banking",
+        "other",
+        "function",
+        "replaced",
+        "summary",
+        "footnotes",
+        "expenditure"
+      ]
+    },
+    {
+      "id": "table_22",
+      "name": "Table 22: Expenditure with multiple endnotes referenced",
+      "page": 8,
+      "headers": [
+        "Expenditure £m",
+        "Notes (Notes located on page [n])",
+        "2010",
+        "2011"
+      ],
+      "rows": [
+        [
+          "Information",
+          "1",
+          "10.2",
+          "14.8"
+        ],
+        [
+          "Contingency",
+          "",
+          "2.6",
+          "1.2"
+        ],
+        [
+          "Payments",
+          "3",
+          "22.41",
+          "19.88"
+        ],
+        [
+          "Banking services",
+          "4",
+          "22.90",
+          "44.23"
+        ],
+        [
+          "Interest",
+          "",
+          "0.23",
+          "0.10"
+        ],
+        [
+          "Dividends",
+          "23",
+          "2.5",
+          "3.68"
+        ],
+        [
+          "Other",
+          "9",
+          "12.69",
+          "10.32"
+        ]
+      ],
+      "text_summary": "Table name: Table 22: Expenditure with multiple endnotes referenced || Headers: Expenditure £m | Notes (Notes located on page [n]) | 2010 | 2011 || Row: Information | 1 | 10.2 | 14.8 || Row: Contingency |  | 2.6 | 1.2 || Row: Payments | 3 | 22.41 | 19.88 || Row: Banking services | 4 | 22.90 | 44.23 || Row: Interest |  | 0.23 | 0.10 || Row: Dividends | 23 | 2.5 | 3.68 || Row: Other | 9 | 12.69 | 10.32",
+      "keywords": [
+        "referenced",
+        "contingency",
+        "page",
+        "notes",
+        "endnotes",
+        "services",
+        "dividends",
+        "with",
+        "table",
+        "multiple",
+        "located",
+        "banking",
+        "interest",
+        "information",
+        "other",
+        "payments",
+        "expenditure"
+      ]
+    },
+    {
+      "id": "table_23",
+      "name": "Table 23: Simulated table using tabs (2008-2009)",
+      "page": 8,
+      "headers": [
+        "",
+        "2008",
+        "",
+        "2009",
+        ""
+      ],
+      "rows": [
+        [
+          "Name",
+          "Entered",
+          "Completed",
+          "Entered",
+          "Completed"
+        ],
+        [
+          "Bob",
+          "22",
+          "21",
+          "20",
+          "19"
+        ],
+        [
+          "Sue",
+          "44",
+          "12",
+          "12",
+          "10"
+        ]
+      ],
+      "text_summary": "Table name: Table 23: Simulated table using tabs (2008-2009) || Headers: 2008 | 2009 || Row: Name | Entered | Completed | Entered | Completed || Row: Bob | 22 | 21 | 20 | 19 || Row: Sue | 44 | 12 | 12 | 10",
+      "keywords": [
+        "tabs",
+        "sue",
+        "name",
+        "entered",
+        "completed",
+        "table",
+        "using",
+        "bob",
+        "simulated"
+      ]
+    },
+    {
+      "id": "table_24",
+      "name": "Table 24: Year-end financial statement with liabilities in pounds thousands",
+      "page": 9,
+      "headers": [
+        "",
+        "2010",
+        "2009",
+        "2008"
+      ],
+      "rows": [
+        [
+          "Non-current assets",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Buildings",
+          "345",
+          "445",
+          "222"
+        ],
+        [
+          "Investment",
+          "567",
+          "654",
+          "423"
+        ],
+        [
+          "Intangibles",
+          "423",
+          "123",
+          "453"
+        ],
+        [
+          "Current assets",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Trade",
+          "435",
+          "634",
+          "231"
+        ],
+        [
+          "Cash",
+          "524",
+          "123",
+          "482"
+        ],
+        [
+          "Other",
+          "223",
+          "211",
+          "254"
+        ],
+        [
+          "Current liabilities",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Trade liabilities",
+          "154",
+          "125",
+          "421"
+        ],
+        [
+          "Financial debt",
+          "231",
+          "474",
+          "572"
+        ],
+        [
+          "Provisions",
+          "111",
+          "312",
+          "347"
+        ]
+      ],
+      "text_summary": "Table name: Table 24: Year-end financial statement with liabilities in pounds thousands || Headers: 2010 | 2009 | 2008 || Row: Non-current assets |  |  |  || Row: Buildings | 345 | 445 | 222 || Row: Investment | 567 | 654 | 423 || Row: Intangibles | 423 | 123 | 453 || Row: Current assets |  |  |  || Row: Trade | 435 | 634 | 231 || Row: Cash | 524 | 123 | 482 || Row: Other | 223 | 211 | 254 || Row: Current liabilities |  |  |  || Row: Trade liabilities | 154 | 125 | 421 || Row: Financial debt | 231 | 474 | 572 || Row: Provisions | 111 | 312 | 347",
+      "keywords": [
+        "assets",
+        "thousands",
+        "cash",
+        "liabilities",
+        "intangibles",
+        "year",
+        "provisions",
+        "other",
+        "end",
+        "debt",
+        "with",
+        "investment",
+        "pounds",
+        "trade",
+        "current",
+        "buildings",
+        "non",
+        "financial",
+        "table",
+        "statement"
+      ]
+    },
+    {
+      "id": "table_25",
+      "name": "Table 25: Competition entries and wins (2008-2009)",
+      "page": 9,
+      "headers": [
+        "",
+        "2008",
+        "",
+        "2009",
+        ""
+      ],
+      "rows": [
+        [
+          "Name",
+          "Entered",
+          "Won",
+          "Entered",
+          "Won"
+        ],
+        [
+          "Bob",
+          "22",
+          "21",
+          "20",
+          "19"
+        ],
+        [
+          "Sue",
+          "44",
+          "12",
+          "12",
+          "10"
+        ],
+        [
+          "Sam",
+          "16",
+          "4",
+          "45",
+          "30"
+        ]
+      ],
+      "text_summary": "Table name: Table 25: Competition entries and wins (2008-2009) || Headers: 2008 | 2009 || Row: Name | Entered | Won | Entered | Won || Row: Bob | 22 | 21 | 20 | 19 || Row: Sue | 44 | 12 | 12 | 10 || Row: Sam | 16 | 4 | 45 | 30",
+      "keywords": [
+        "sam",
+        "sue",
+        "name",
+        "entered",
+        "table",
+        "entries",
+        "and",
+        "competition",
+        "won",
+        "bob",
+        "wins"
+      ]
+    },
+    {
+      "id": "table_26",
+      "name": "Table 26: Courses offered by Institution X updated (2006-2009)",
+      "page": 9,
+      "headers": [
+        "",
+        "2006",
+        "2007",
+        "2008",
+        "2009"
+      ],
+      "rows": [
+        [
+          "Economics",
+          "A, B",
+          "A, C",
+          "A, C",
+          "A, C"
+        ],
+        [
+          "International relations",
+          "A, E",
+          "A, E",
+          "A, B",
+          "A, B"
+        ],
+        [
+          "Philosophy",
+          "A",
+          "A",
+          "A",
+          "A"
+        ],
+        [
+          "Politics",
+          "A, D",
+          "A, D",
+          "A, B",
+          "A"
+        ],
+        [
+          "Mathematics",
+          "B, C",
+          "B",
+          "A, B",
+          "A, B"
+        ],
+        [
+          "English",
+          "A, C",
+          "A, B",
+          "A,B",
+          "A, C"
+        ]
+      ],
+      "text_summary": "Table name: Table 26: Courses offered by Institution X updated (2006-2009) || Headers: 2006 | 2007 | 2008 | 2009 || Row: Economics | A, B | A, C | A, C | A, C || Row: International relations | A, E | A, E | A, B | A, B || Row: Philosophy | A | A | A | A || Row: Politics | A, D | A, D | A, B | A || Row: Mathematics | B, C | B | A, B | A, B || Row: English | A, C | A, B | A,B | A, C",
+      "keywords": [
+        "english",
+        "international",
+        "relations",
+        "politics",
+        "offered",
+        "courses",
+        "table",
+        "philosophy",
+        "institution",
+        "mathematics",
+        "economics",
+        "updated"
+      ]
+    },
+    {
+      "id": "table_27",
+      "name": "Table 27: Simulated table using tab stops for fruit counts",
+      "page": 10,
+      "headers": [
+        "Name",
+        "Apples",
+        "Pears"
+      ],
+      "rows": [
+        [
+          "Bob Scott",
+          "20",
+          "25"
+        ],
+        [
+          "Susan. P. Arnold-Jones, BA, FRSA, MD",
+          "24",
+          "15"
+        ],
+        [
+          "Sam Holder-Dickinson",
+          "14",
+          "10"
+        ]
+      ],
+      "text_summary": "Table name: Table 27: Simulated table using tab stops for fruit counts || Headers: Name | Apples | Pears || Row: Bob Scott | 20 | 25 || Row: Susan. P. Arnold-Jones, BA, FRSA, MD | 24 | 15 || Row: Sam Holder-Dickinson | 14 | 10",
+      "keywords": [
+        "for",
+        "counts",
+        "arnold",
+        "name",
+        "fruit",
+        "scott",
+        "using",
+        "simulated",
+        "pears",
+        "stops",
+        "apples",
+        "frsa",
+        "tab",
+        "susan",
+        "bob",
+        "sam",
+        "jones",
+        "holder",
+        "table",
+        "dickinson"
+      ]
+    },
+    {
+      "id": "table_28",
+      "name": "Table 28: Year-end financial table with headings problem revisited",
+      "page": 10,
+      "headers": [
+        "",
+        "2010",
+        "2009",
+        "2008"
+      ],
+      "rows": [
+        [
+          "Non-current assets",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Buildings",
+          "345",
+          "445",
+          "222"
+        ],
+        [
+          "Investment",
+          "567",
+          "654",
+          "423"
+        ],
+        [
+          "Intangibles",
+          "423",
+          "123",
+          "453"
+        ],
+        [
+          "Current assets",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Trade",
+          "435",
+          "634",
+          "231"
+        ],
+        [
+          "Cash",
+          "524",
+          "123",
+          "482"
+        ],
+        [
+          "Other",
+          "223",
+          "211",
+          "254"
+        ],
+        [
+          "Current liabilities",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Trade liabilities",
+          "154",
+          "125",
+          "421"
+        ],
+        [
+          "Financial debt",
+          "231",
+          "474",
+          "572"
+        ],
+        [
+          "Provisions",
+          "111",
+          "312",
+          "347"
+        ]
+      ],
+      "text_summary": "Table name: Table 28: Year-end financial table with headings problem revisited || Headers: 2010 | 2009 | 2008 || Row: Non-current assets |  |  |  || Row: Buildings | 345 | 445 | 222 || Row: Investment | 567 | 654 | 423 || Row: Intangibles | 423 | 123 | 453 || Row: Current assets |  |  |  || Row: Trade | 435 | 634 | 231 || Row: Cash | 524 | 123 | 482 || Row: Other | 223 | 211 | 254 || Row: Current liabilities |  |  |  || Row: Trade liabilities | 154 | 125 | 421 || Row: Financial debt | 231 | 474 | 572 || Row: Provisions | 111 | 312 | 347",
+      "keywords": [
+        "assets",
+        "cash",
+        "liabilities",
+        "intangibles",
+        "year",
+        "provisions",
+        "other",
+        "end",
+        "debt",
+        "problem",
+        "with",
+        "investment",
+        "trade",
+        "current",
+        "buildings",
+        "non",
+        "revisited",
+        "financial",
+        "table",
+        "headings"
+      ]
+    },
+    {
+      "id": "table_29",
+      "name": "Table 29: Rainfall by continent with multiple header attributes (2008-2010)",
+      "page": 11,
+      "headers": [
+        "",
+        "South America",
+        "Asia",
+        "Africa",
+        "Australia"
+      ],
+      "rows": [
+        [
+          "2010",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Highest average",
+          "523.6",
+          "467.4",
+          "405.0",
+          "340.5"
+        ],
+        [
+          "Highest in 24 hours",
+          "73.1",
+          "54.1",
+          "27.2",
+          "66.3"
+        ],
+        [
+          "Highest in 12 hours",
+          "42.4",
+          "30.1",
+          "15.9",
+          "40.3"
+        ],
+        [
+          "2009",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Highest average",
+          "487.7",
+          "453.6",
+          "398.7",
+          "356"
+        ],
+        [
+          "Highest in 24 hours",
+          "67.2",
+          "53.2",
+          "44.3",
+          "53.8"
+        ],
+        [
+          "Highest in 12 hours",
+          "34.7",
+          "34.1",
+          "29.8",
+          "31.0"
+        ],
+        [
+          "2008",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Highest average",
+          "496.7",
+          "444.3",
+          "502.1",
+          "399.6"
+        ],
+        [
+          "Highest in 24 hours",
+          "44.2",
+          "56.7",
+          "32.1",
+          "63.2"
+        ],
+        [
+          "Highest in 12 hours",
+          "30.1",
+          "32.7",
+          "21.9",
+          "40.2"
+        ]
+      ],
+      "text_summary": "Table name: Table 29: Rainfall by continent with multiple header attributes (2008-2010) || Headers: South America | Asia | Africa | Australia || Row: 2010 |  |  |  |  || Row: Highest average | 523.6 | 467.4 | 405.0 | 340.5 || Row: Highest in 24 hours | 73.1 | 54.1 | 27.2 | 66.3 || Row: Highest in 12 hours | 42.4 | 30.1 | 15.9 | 40.3 || Row: 2009 |  |  |  |  || Row: Highest average | 487.7 | 453.6 | 398.7 | 356 || Row: Highest in 24 hours | 67.2 | 53.2 | 44.3 | 53.8 || Row: Highest in 12 hours | 34.7 | 34.1 | 29.8 | 31.0 || Row: 2008 |  |  |  |  || Row: Highest average | 496.7 | 444.3 | 502.1 | 399.6 || Row: Highest in 24 hours | 44.2 | 56.7 | 32.1 | 63.2 || Row: Highest in 12 hours | 30.1 | 32.7 | 21.9 | 40.2",
+      "keywords": [
+        "rainfall",
+        "australia",
+        "average",
+        "continent",
+        "attributes",
+        "hours",
+        "table",
+        "multiple",
+        "with",
+        "america",
+        "asia",
+        "africa",
+        "highest",
+        "header",
+        "south"
+      ]
+    }
+  ]
+}
