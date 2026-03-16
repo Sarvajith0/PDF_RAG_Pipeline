@@ -2,107 +2,146 @@
 import pdfplumber
 import json
 import re
-PDF_PATH = r".\sample-tables.pdf"
-OUTPUT_PATH = r".\knowledge_base.json"
-# Map of (page_number, table_index_on_page) → table name
-# Detected by reading page text alongside table positions
-TABLE_NAME_MAP = {
-    (1, 0): "Table 1: Basic header structure example",
-    (1, 1): "Table 2: Expenditure by function with footnotes (2009-2011)",
-    (1, 2): "Table 3: Film credits style layout without column headers",
-    (2, 0): "Table 4: Film credits with column headers (Role and Actor)",
-    (2, 1): "Table 5: Year-end financial statement in pounds thousands (2008-2010)",
-    (2, 2): "Table 6: Rainfall by continent with multi-level headers (2009-2010)",
-    (3, 0): "Table 7: Year-end statement non-current assets in pounds thousands (2008-2010)",
-    (3, 1): "Table 8: Year-end statement current assets in pounds thousands (2008-2010)",
-    (3, 2): "Table 9: Rainfall by continent 2009",
-    (4, 0): "Table 10: Self-contained year-end statement with layout problems (2011)",
-    (4, 1): "Table 11: Self-contained year-end statement resolved layout (2011)",
-    (5, 0): "Table 12: Merged data cells example (2008-2009)",
-    (5, 1): "Table 13: Use of graphic symbols for survey responses",
-    (5, 2): "Table 14: Survey responses with real text instead of symbols",
-    (5, 3): "Table 15: Courses offered by Institution X by degree type (2006-2009)",
-    (6, 0): "Table 16: Masters courses offered by Institution X (2006-2009)",
-    (6, 1): "Table 17: Accounts 2011 in pounds thousands with subtotals",
-    (6, 2): "Table 18: Accounts 2011 in pounds thousands with negative costs",
-    (7, 0): "Table 19: Human Development Index HDI trends 1980 to 2010",
-    (7, 1): "Table 20: Expenditure by function with footnotes referenced",
-    (8, 0): "Table 21: Expenditure by function footnotes replaced by summary",
-    (8, 1): "Table 22: Expenditure with multiple endnotes referenced",
-    (8, 2): "Table 23: Simulated table using tabs (2008-2009)",
-    (9, 0): "Table 24: Year-end financial statement with liabilities in pounds thousands",
-    (9, 1): "Table 25: Competition entries and wins (2008-2009)",
-    (9, 2): "Table 26: Courses offered by Institution X updated (2006-2009)",
-    (10, 0): "Table 27: Simulated table using tab stops for fruit counts",
-    (10, 1): "Table 28: Year-end financial table with headings problem revisited",
-    (11, 0): "Table 29: Rainfall by continent with multiple header attributes (2008-2010)",
-}
+import os
+
+PDF_PATH = "sample-tables.pdf"
+OUTPUT_PATH = "knowledge_base.json"
 
 def clean(value):
+    """Clean a cell value."""
     if value is None:
         return ""
     return re.sub(r'\s+', ' ', str(value)).strip()
 
-def serialize_table_to_text(name, headers, rows):
-    """Convert table headers and rows into a readable text summary for the LLM."""
-    lines = [f"Table name: {name}"]
-    lines.append(f"Headers: {' | '.join([clean(h) for h in headers if clean(h)])}")
+def extract_table_captions(page_text):
+
+    pattern = r'((?:Table|TABLE)\s+(\d+)\s*[:\-\.—]\s*[^\n]{3,120})'
+    matches = re.findall(pattern, page_text)
+    
+    captions = []
+    for full_caption, table_num in matches:
+        captions.append((int(table_num), clean(full_caption)))
+    
+    return captions
+
+def get_caption_positions(page_text, captions):
+  
+    positions = {}
+    for table_num, caption in captions:
+        pos = page_text.find(caption[:30])   # search by first 30 chars
+        if pos != -1:
+            positions[table_num] = pos
+    return positions
+
+def match_captions_to_tables(page_captions, num_tables_on_page):
+    
+    matched = {}
+    for i in range(num_tables_on_page):
+        if i < len(page_captions):
+            table_num, caption = page_captions[i]
+            matched[i] = (table_num, caption)
+        else:
+            matched[i] = (None, None)
+    return matched
+
+def serialize_table_to_text(table_num, caption, headers, rows):
+    """Convert table to readable text summary for LLM context."""
+    num_tag = f"[TABLE NUMBER {table_num}] " if table_num else ""
+    name_line = f"{num_tag}{caption}" if caption else f"Table on page"
+    
+    lines = [f"Table name: {name_line}"]
+    clean_headers = [clean(h) for h in headers if clean(h)]
+    if clean_headers:
+        lines.append(f"Headers: {' | '.join(clean_headers)}")
+    
     for row in rows:
         cleaned_row = [clean(c) for c in row]
         if any(cleaned_row):
             lines.append("Row: " + " | ".join(cleaned_row))
+    
     return " || ".join(lines)
 
-def extract_keywords(name, headers, rows):
-    """Extract searchable keywords from table name, headers and row values."""
-    text = name + " " + " ".join([clean(h) for h in headers])
+def extract_keywords(table_num, caption, headers, rows):
+    """Extract searchable keywords including table number variants."""
+    text = (caption or "") + " " + " ".join([clean(h) for h in headers])
     for row in rows:
         text += " " + " ".join([clean(c) for c in row])
-    # Extract meaningful words (length > 2, not just numbers)
-    words = re.findall(r'[a-zA-Z]{3,}', text.lower())
-    return list(set(words))
+    
+    # General keywords
+    words = list(set(re.findall(r'[a-zA-Z]{3,}', text.lower())))
+    
+    # Add explicit table number keywords so "Table 11" queries work
+    if table_num:
+        words += [
+            f"table{table_num}",
+            f"table {table_num}",
+        ]
+    
+    return words
 
-# extracting data
 tables_data = []
+global_table_counter = 0
 
 with pdfplumber.open(PDF_PATH) as pdf:
     for page_num, page in enumerate(pdf.pages, start=1):
+        page_text = page.extract_text() or ""
         tables = page.extract_tables()
-
+        
+        if not tables:
+            continue
+        
+        # Step 1: Find all captions on this page
+        page_captions = extract_table_captions(page_text)
+        
+        # Step 2: Match captions to tables by order
+        caption_map = match_captions_to_tables(page_captions, len(tables))
+        
+        # Step 3: Process each table
         for table_idx, table in enumerate(tables):
             if not table or len(table) < 1:
                 continue
-
-            # Get table name from map
-            name = TABLE_NAME_MAP.get((page_num, table_idx), f"Table on page {page_num} index {table_idx}")
-
-            # First row as headers
+            
+            global_table_counter += 1
+            
+            # Get matched caption for this table
+            table_num, caption = caption_map.get(table_idx, (None, None))
+            
+            # Fallback name if no caption detected
+            if not caption:
+                caption = f"Table {global_table_counter} on page {page_num}"
+                table_num = global_table_counter
+            
+            # Extract headers and rows
             headers = [clean(h) for h in table[0]]
-            rows = [[clean(c) for c in row] for row in table[1:] if any(clean(c) for c in row)]
-
-            # Build text summary for LLM context
-            text_summary = serialize_table_to_text(name, headers, rows)
-
-            # Build keywords for retrieval
-            keywords = extract_keywords(name, headers, rows)
-
+            rows = [[clean(c) for c in row] for row in table[1:] 
+                    if any(clean(c) for c in row)]
+            
+            # Build text summary
+            text_summary = serialize_table_to_text(
+                table_num, caption, headers, rows
+            )
+            
+            # Build keywords
+            keywords = extract_keywords(table_num, caption, headers, rows)
+            
             table_entry = {
-                "id": f"table_{len(tables_data) + 1}",
-                "name": name,
+                "id": f"table_{global_table_counter}",
+                "table_number": table_num,
+                "name": caption,
                 "page": page_num,
                 "headers": headers,
                 "rows": rows,
                 "text_summary": text_summary,
                 "keywords": keywords
             }
-
+            
             tables_data.append(table_entry)
-            print(f"Extracted: {name} ({len(rows)} rows)")
+            print(f"✅ Page {page_num} | {caption[:60]}")
 
-#To json
+doc_name = os.path.basename(PDF_PATH)
+
 knowledge_base = {
-    "document": "sample-tables.pdf",
-    "description": "Accessible PDF tables sample document — contains 29 tables of various types including financial statements, rainfall data, course listings, and survey results.",
+    "document": doc_name,
     "total_tables": len(tables_data),
     "tables": tables_data
 }
@@ -110,4 +149,4 @@ knowledge_base = {
 with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
     json.dump(knowledge_base, f, indent=2, ensure_ascii=False)
 
-print(f"\nDone {len(tables_data)} tables saved to knowledge_base.json")
+print(f"\nDone! {len(tables_data)} tables saved to {OUTPUT_PATH}")
